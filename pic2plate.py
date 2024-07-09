@@ -163,10 +163,10 @@ if st.button("Generate Recipe"):
                     st.write("Nutritional information section is missing.")
 
                 # Fetch YouTube video recommendations
-                video_query = f"{recipe_name} recipe {language_preference}"
+                video_query = f"{recipe_name} + "in" + recipe {language_preference}"
                 video_response = tavily.search(
                     query=video_query, 
-                    search_depth="basic",
+                    search_depth="advanced",
                     include_domains=["https://www.youtube.com"],
                     max_results=4
                 )
