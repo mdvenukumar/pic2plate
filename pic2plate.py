@@ -167,7 +167,7 @@ if st.button("Generate Recipe"):
                 video_response = tavily.search(
                     query=video_query, 
                     search_depth="basic",
-                    include_domains=["youtube.com"],
+                    include_domains=["https://www.youtube.com"],
                     max_results=4
                 )
 
